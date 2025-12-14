@@ -191,7 +191,7 @@ The `PipelineController` orchestrates the execution of all agents in sequence. I
 #### Technologies
 - **Language**: Python 3.8+
 - **Data Validation**: `pydantic` for defining the `JobContext` and other data models, providing data validation and serialization.
-- **Parsing**: Regular expressions for parsing SBATCH directives and commands.
+- **Parsing**: PEG grammar (Parsimonious) for script structure, regex for specifics.
 - **LLM Integration**: OpenAI, Anthropic, Ollama, Hugging Face via LangChain.
 
 #### Dependencies
@@ -254,7 +254,7 @@ The `PipelineController` orchestrates the execution of all agents in sequence. I
 #### Technologies
 - **Language**: Python 3.8+
 - **Data Validation**: `pydantic` for defining the `JobContext` and other data models, providing data validation and serialization.
-- **Parsing**: Regular expressions for parsing SBATCH directives and commands.
+- **Parsing**: PEG grammar (Parsimonious) for script structure, regex for specifics.
 - **LLM Integration**: OpenAI, Anthropic, Ollama, Hugging Face via LangChain.
 
 #### Dependencies

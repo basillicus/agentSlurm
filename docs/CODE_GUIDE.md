@@ -68,7 +68,7 @@ class BaseAgent(ABC):
 
 #### Parser Agent
 The Parser Agent converts raw SLURM scripts into structured elements. It extracts:
-- SBATCH directives using regex pattern matching
+- SBATCH directives using a PEG grammar (Parsimonious) with regex fallback
 - Commands (identifying tool commands and Lustre commands)
 - Special comment patterns for in-script communication
 
